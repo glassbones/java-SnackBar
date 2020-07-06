@@ -3,7 +3,7 @@ package snackBar;
 public class Snack {
 
         //fields
-        private static int maxId = 0;
+        private static int maxId = 1;
 
         private int id;
         private String name;
@@ -12,6 +12,15 @@ public class Snack {
         private int vmId;
 
         //constructor
+        public Snack(String name, double quantity, double cost, int vmId)
+        {
+            maxId++;
+            id = maxId;
+            this.name = name;
+            this.quantity = quantity;
+            this.cost = cost;
+            this.vmId = vmId;
+        }
 
         //methods
         public int getId(){ return id; }

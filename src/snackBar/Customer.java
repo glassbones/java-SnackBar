@@ -9,8 +9,16 @@ public class Customer {
     private String name;
     private double cashOnHand;
 
-    //methods
+    //constructor
+    public Customer(String name, double cashOnHand)
+    {
+        maxId++;
+        id = maxId;
+        this.name = name;
+        this.cashOnHand = cashOnHand;
+    }
 
+    //methods
     //get
     public int getId(){ return id; }
     public String getName(){ return name; }

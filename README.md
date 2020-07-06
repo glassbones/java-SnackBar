@@ -17,21 +17,21 @@ Classes should include:
 
 Snack has fields (so knows)
 
-* maxId - keep track of last used snack id
-* id - automatically generated field
-* name
-* quantity
-* cost
-* vending machine id
+*maxId - keep track of last used snack id*
+*id - automatically generated field*
+*name*
+*quantity*
+*cost*
+*vending machine id*
 
 Snack has methods (so can)
 
-* get id
-* set and get name
-* set and get cost
-* set and get vending machine id
-* get quantity
-* add quantity when given how many to add
+*get id*
+*set and get name*
+*set and get*
+*set and get vending machine id*
+*get quantity*
+*add quantity when given how many to add*
 * buy snack when given how many to buy
 * get total cost given a quantity
 
@@ -39,30 +39,30 @@ Snack has methods (so can)
 
 Vending machine has fields (so knows)
 
-* maxId - keep track of last used vending machine id
-* id - automatically generated field
-* name
+*maxId - keep track of last used vending machine id*
+*id - automatically generated field*
+*name*
 
 Vending Machine has methods (so can)
 
-* get id
-* set and get name
+*get *id*
+*set and get name*
 
 ### Customer
 
 Customer has fields (so knows)
 
-* maxId - keep track of last used customer id
-* id - automatically generated field
-* name
-* cash on hand
+*maxId - keep track of last used customer id*
+*id - automatically generated field*
+*name*
+*cash on hand*
 
 Customer has methods (so can)
 
-* get id
-* set and get name
-* add cash to cash on hand
-* get cash on hand
+*get id*
+*set and get name*
+*add cash to cash on hand*
+*get cash on hand*
 * buy snacks. Given the total cost of the snacks to be purchased, reduce the cash on hand by that amount
 
 ### MPV

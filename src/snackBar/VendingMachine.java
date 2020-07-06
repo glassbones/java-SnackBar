@@ -8,6 +8,9 @@ public class VendingMachine {
     private int id;
     private String name;
 
+    //constructor
+    public VendingMachine(String name){ this.name = name; }
+
     //methods
     public int getId(){ return id;}
     public String getName(){ return name;}
