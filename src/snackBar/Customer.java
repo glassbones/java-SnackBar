@@ -45,26 +45,30 @@ public class Customer {
     public String printCashOnHand(){ 
         return 
         getName() + 
-        " cash on hand $" +
-        Double.toString(cashOnHand); }
-    public String printSnacksOnHand(int SnackId){ 
+        " has $" +
+        Double.toString(cashOnHand) +
+        " cash on hand!"; }
+    public String printSnacksOnHand(String name){ 
          
-        if (id == 2){
+        if (name.equals("s2")){
             return
-            "Quantity of snack 2 is " +
-            Double.toString(s2onHand);
-        }
-        if (id == 3){
+            getName() +
+            " has 'snack 2'x" +
+            Double.toString(s2onHand) +
+            " on hand!";
+        }else if (name.equals("s3")){
             return
-            "Quantity of snack 3 is " +
-            Double.toString(s3onHand);
-        }
-        if (id == 4){
+            getName() +
+            " has 'snack 3'x" +
+            Double.toString(s3onHand) +
+            " on hand!";
+        }else if (name.equals("s4")){
             return
-            "Quantity of snack 4 is " +
-            Double.toString(s4onHand);
-        }
-        else { return "invalid request"; }
+            getName() +
+            " has 'snack 4'x" +
+            Double.toString(s4onHand) +
+            " on hand!";
+        }else { return "invalid request"; }
     }
 
 }

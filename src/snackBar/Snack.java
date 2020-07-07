@@ -39,7 +39,7 @@ public class Snack {
         public void addQuantity(double quantityAdded){ quantity = quantity + quantityAdded ; }
         public void buySnacks(double quantityBought, Customer customer){
                 //subtract total cost from cashOnHand and set that value to cashOnHand
-                customer.setCashOnHand(customer.getCashOnHand() - getTotalCost(quantityBought)); 
+                customer.setCashOnHand(customer.getCashOnHand() - (getTotalCost(quantityBought))); 
                 // remove snacks from stock
                 quantity = quantity - quantityBought;
                 // set customer snack inventory with quantityBought
@@ -48,7 +48,7 @@ public class Snack {
         public double getTotalCost(double quantityBought){ return quantityBought * cost; }
 
         //print
-        public String printQuantity(){ return "Quantity of " + name +  " is " + getQuantity(); }
+        public String printQuantity(){ return "The remaining stock of " + name +  " is " + getQuantity(); }
         
 
 }
