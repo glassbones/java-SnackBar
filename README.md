@@ -32,8 +32,8 @@ Snack has methods (so can)
 *set and get vending machine id*
 *get quantity*
 *add quantity when given how many to add*
-* buy snack when given how many to buy
-* get total cost given a quantity
+*buy snack when given how many to buy*
+*get total cost given a quantity*
 
 ### VendingMachine
 
@@ -45,7 +45,7 @@ Vending machine has fields (so knows)
 
 Vending Machine has methods (so can)
 
-*get *id*
+*get id*
 *set and get name*
 
 ### Customer
